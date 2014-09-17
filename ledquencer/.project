@@ -42,9 +42,9 @@
 			<locationURI>ArduinoPivateLibPath/DueTimer</locationURI>
 		</link>
 		<link>
-			<name>Libraries/FastLED2.1</name>
+			<name>Libraries/FastLED</name>
 			<type>2</type>
-			<locationURI>ArduinoPivateLibPath/FastLED2.1</locationURI>
+			<locationURI>ArduinoPivateLibPath/FastLED</locationURI>
 		</link>
 		<link>
 			<name>Libraries/SPI</name>

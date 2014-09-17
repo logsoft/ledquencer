@@ -14,9 +14,8 @@
  #include "funcs.h"
  #include "clock.h"
  #include "track.h"
- #include "FastLED.h"
- //#include <Wire.h>
- //#include "Adafruit_MPR121.h"
+
+
  */
 
 //debug switch
