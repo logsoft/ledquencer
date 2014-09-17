@@ -2,7 +2,7 @@
 #define hpl_hardware_h
 
 
-#include <Adafruit_MPR121.h>
+//#include <Adafruit_MPR121.h>
 #include <FastLED.h>
 #include <pixeltypes.h>
 #include <sam3xa/include/instance/instance_pioa.h>
@@ -18,7 +18,7 @@
 CRGB leds[NUM_LEDS];
 
 //touch input thing
-Adafruit_MPR121 mpr[4] = {Adafruit_MPR121()};
+//Adafruit_MPR121 mpr[4] = {Adafruit_MPR121()};
 
 
 
@@ -59,16 +59,16 @@ void portsetup() {
 //touch Buttons setup
   // Default address is 0x5A, if tied to 3.3V its 0x5B
   // If tied to SDA its 0x5C and if SCL then 0x5D
-
+/*
   for (int i=0; i<5; i++){
-	  Adafruit_MPR121 touch = mpr[i];
+//	  Adafruit_MPR121 touch = mpr[i];
   if (!touch.begin(0x5A)) {
     Serial.println("MPR121 not found, check wiring?");
     while (1);
   }
   }
+*/
   Serial.println("MPR121 found!");
-
 
 
   //trigger out
