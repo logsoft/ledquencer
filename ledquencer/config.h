@@ -4,7 +4,8 @@
 #define config_h
 
 //useports or usebus hardware?
-#define USEBUS
+//#define USEBUS
+#define USEPORTS
 
 //config for HPL hardware 
 //6x neonpixel sticks

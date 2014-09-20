@@ -1,5 +1,5 @@
 #ifndef robo_hardware_h
-#define robo_hardware_h
+#define porthardware_h
 
 
 #include <Arduino.h>
@@ -75,96 +75,80 @@
 #define FB08 50
 
 
-void getMuxState() {
+/*
+
+int  getMuxState1() {
   //get mux 1 states
-  mux1[0] = false;
-  mux1[1] = functionlamps[5];
-  mux1[2] = functionlamps[6];
-  mux1[3] = functionlamps[4];
-  mux1[4] = functionlamps[3];
-  mux1[5] = functionlamps[2];
-  mux1[6] = functionlamps[1];
-  mux1[7] = functionlamps[0];
-  mux1[8] = indicatorlamps[1];
-  mux1[9] = steplamps[1];
-  mux1[10] = indicatorlamps[0];
-  mux1[11] = steplamps[0];
-  mux1[12] = indicatorlamps[3];
-  mux1[13] = steplamps[3];
-  mux1[14] = indicatorlamps[2];
-  mux1[15] = steplamps[2];
-  //mux2
-  mux2[0] = steplamps[13];
-  mux2[1] = indicatorlamps[13];
-  mux2[2] = indicatorlamps[14];
-  mux2[3] = steplamps[14];
-  mux2[4] = indicatorlamps[15];
-  mux2[5] = steplamps[15];
-  mux2[6] = functionlamps[7];
-  mux2[7] = indicatorlamps[5];
-  mux2[8] = steplamps[5];
-  mux2[9] = steplamps[1];
-  mux2[10] = indicatorlamps[4];
-  mux2[11] = steplamps[4];
-  mux2[12] = indicatorlamps[7];
-  mux2[13] = steplamps[7];
-  mux2[14] = indicatorlamps[6];
-  mux2[15] = steplamps[6];
-  //mux3
-  mux3[0] = false;
-  mux3[1] = false;
-  mux3[2] = false;
-  mux3[3] = false;
-  mux3[4] = false;
-  mux3[5] = false;
-  mux3[6] = indicatorlamps[12];
-  mux3[7] = steplamps[12];
-  mux3[8] = indicatorlamps[9];
-  mux3[9] = steplamps[9];
-  mux3[10] = indicatorlamps[8];
-  mux3[11] = steplamps[8];
-  mux3[12] = indicatorlamps[11];
-  mux3[13] = steplamps[11];
-  mux3[14] = indicatorlamps[10];
-  mux3[15] = steplamps[10];
-}
+  int imux1[16];
+  imux1[0] = false;
+  imux1[1] = int(functionlamps[5]);
+  imux1[2] = functionlamps[6];
+  imux1[3] = functionlamps[4];
+  imux1[4] = functionlamps[3];
+  imux1[5] = functionlamps[2];
+  imux1[6] = functionlamps[1];
+  imux1[7] = functionlamps[0];
+  imux1[8] = indicatorlamps[1];
+  imux1[9] = steplamps[1];
+  imux1[10] = indicatorlamps[0];
+  imux1[11] = steplamps[0];
+  imux1[12] = indicatorlamps[3];
+  imux1[13] = steplamps[3];
+  imux1[14] = indicatorlamps[2];
+  imux1[15] = steplamps[2];
 
-void readinSB() {
 
-  stepbuttons[0] = digitalRead(SB01);
-  stepbuttons[1] = digitalRead(SB02);
-  stepbuttons[2] = digitalRead(SB03);
-  stepbuttons[3] = digitalRead(SB04);
-  stepbuttons[4] = digitalRead(SB05);
-  stepbuttons[5] = digitalRead(SB06);
-  stepbuttons[6] = digitalRead(SB07);
-  stepbuttons[7] = digitalRead(SB08);
-  stepbuttons[8] = digitalRead(SB09);
-  stepbuttons[9] = digitalRead(SB10);
-  stepbuttons[10] = digitalRead(SB11);
-  stepbuttons[11] = digitalRead(SB12);
-  stepbuttons[12] = digitalRead(SB13);
-  stepbuttons[13] = digitalRead(SB14);
-  stepbuttons[14] = digitalRead(SB15);
-  stepbuttons[15] = digitalRead(SB16);
 
 }
 
-void readinFB() {
-  funcbuttons[0] = digitalRead(FB01);
-  funcbuttons[1] = digitalRead(FB02);
-  funcbuttons[2] = digitalRead(FB03);
-  funcbuttons[3] = digitalRead(FB04);
-  funcbuttons[4] = digitalRead(FB05);
-  funcbuttons[5] = digitalRead(FB06);
-  funcbuttons[6] = digitalRead(FB07);
-  funcbuttons[7] = digitalRead(FB08);
+
+void  getMuxState2() {
+  //get mux 1 states
+  int imux2[16];
+  //imux2
+  imux2[0] = steplamps[13];
+  imux2[1] = indicatorlamps[13];
+  imux2[2] = indicatorlamps[14];
+  imux2[3] = steplamps[14];
+  imux2[4] = indicatorlamps[15];
+  imux2[5] = steplamps[15];
+  imux2[6] = functionlamps[7];
+  imux2[7] = indicatorlamps[5];
+  imux2[8] = steplamps[5];
+  imux2[9] = steplamps[1];
+  imux2[10] = indicatorlamps[4];
+  imux2[11] = steplamps[4];
+  imux2[12] = indicatorlamps[7];
+  imux2[13] = steplamps[7];
+  imux2[14] = indicatorlamps[6];
+  imux2[15] = steplamps[6];
+
+
 }
 
-void readButtons() {
-  readinSB();
-  readinFB();
+void  getMuxState3() {
+  //get mux 1 states
+  int imux3[16];
+  //imux3
+  imux3[0] = false;
+  imux3[1] = false;
+  imux3[2] = false;
+  imux3[3] = false;
+  imux3[4] = false;
+  imux3[5] = false;
+  imux3[6] = indicatorlamps[12];
+  imux3[7] = steplamps[12];
+  imux3[8] = indicatorlamps[9];
+  imux3[9] = steplamps[9];
+  imux3[10] = indicatorlamps[8];
+  imux3[11] = steplamps[8];
+  imux3[12] = indicatorlamps[11];
+  imux3[13] = steplamps[11];
+  imux3[14] = indicatorlamps[10];
+  imux3[15] = steplamps[10];
 }
+
+*/
 
 //set Hardware debouncing!
 void setDebounce()
@@ -249,9 +233,6 @@ void portsetup() {
   pinMode (FB06, INPUT);
   pinMode (FB07, INPUT);
   pinMode (FB08, INPUT);
-
-  //important! latch aktivieren!
-  digitalWrite(muxlatch, true);
   //ablöschen
   digitalWrite(mux3A3, LOW);
   digitalWrite(mux3A2, LOW);
@@ -265,9 +246,11 @@ void portsetup() {
   digitalWrite(mux1A2, LOW);
   digitalWrite(mux1A1, LOW);
   digitalWrite(mux1A0, LOW);
+  //important! latch aktivieren!
+  digitalWrite(muxlatch, true);
 
 //set SAM3X Hardware debouncing parameters for inputs
-  setDebounce();
+//  setDebounce();
 }
 
 
@@ -286,48 +269,31 @@ void muxout(int pin0, int pin1, int pin2, int pin3, bool mask[], int pos) {
 
 long then = 0;
 
-void muxAll() {
-  getMuxState();
+void muxAll(int* mux1,int* mux2, int* mux3) {
+  //getMuxState();
   
   
   long now = micros();
   //  if (then + 100 <= now) {
   then = now;
   bool flag = true; //mux1[posi];
-  if (flag) {
-    digitalWrite(mux1A0, (mux1[posi] & (posi & 1)));
-    digitalWrite(mux1A1, (mux1[posi] & (posi & 2)));
-    digitalWrite(mux1A2, (mux1[posi] & (posi & 4)));
-    digitalWrite(mux1A3, (mux1[posi] & (posi & 8)));
-  }
-  flag = true; //mux2[posi];
-  if (flag) {
-    digitalWrite(mux2A0, (mux2[posi] & (posi  & 1)));
-    digitalWrite(mux2A1, (mux2[posi] & (posi  & 2)));
-    digitalWrite(mux2A2, (mux2[posi] & (posi  & 4)));
-    digitalWrite(mux2A3, (mux2[posi] & (posi  & 8)));
-  }
-  flag = true; //mux3[posi];
-  if (flag) {
-    digitalWrite(mux3A0, (mux3[posi] & (posi  & 1)));
-    digitalWrite(mux3A1, (mux3[posi] & (posi  & 2)));
-    digitalWrite(mux3A2, (mux3[posi] & (posi  & 4)));
-    digitalWrite(mux3A3, (mux3[posi] & (posi  & 8)));
-  }
 
+/*
   posi += 1;
   int aktstate = 0;
   if (posi == 16) {
     posi = 0;
     //   }
   }
+*/
+
 }
 
-
-void setLeds(){
+/*
+void showLeds(){
  muxAll(); 
 }
-
+*/
 
 
 
