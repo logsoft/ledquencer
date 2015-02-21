@@ -13,7 +13,7 @@
 #include "globals.h"
 #include "menu.h"
 #include "porthardware.h"
-#include "track.h"
+#include "sequence.h"
 
 int debugging_enabled = 1;
 
@@ -90,9 +90,9 @@ void loop() {
 	menu.do_your_things(funcbuttons, stepbuttons);
 //	steplamps = stepbuttons;
 //	indicatorlamps = stepbuttons;
-	steplamps = menu.get_upperleds();
-	indicatorlamps = menu.get_lowerleds();
-	functionlamps = menu.get_page();
+	stepleds = menu.get_indicatorleds();
+	indicatorleds = menu.get_stepleds();
+	functionleds = menu.get_page();
 
 //send debug messages
 	if (send_debug)
@@ -153,7 +153,7 @@ void alive1() {
 //		Serial.print(stepbuttons[i]);
 //	}
 	Serial.print(" SL: ");
-	Serial.print(steplamps, BIN);
+	Serial.print(stepleds, BIN);
 //	for (int i = 0; i < 16; i++) {
 //		Serial.print(steplamps[i]);
 //	}

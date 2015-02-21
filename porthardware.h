@@ -60,79 +60,79 @@ void update_mux(int index) {
 		mux3[0] = false;
 		break;
 	case 1:
-		mux1[1] = get_bit(functionlamps, 5); //functionlamps[5];
-		mux2[1] = get_bit(steplamps, 13);  //steplamps[13];
+		mux1[1] = get_bit(functionleds, 5); //functionlamps[5];
+		mux2[1] = get_bit(stepleds, 13);  //steplamps[13];
 		mux3[1] = false;
 		break;
 	case 2:
-		mux1[2] = get_bit(functionlamps, 6);
-		mux2[2] = get_bit(indicatorlamps, 13);
+		mux1[2] = get_bit(functionleds, 6);
+		mux2[2] = get_bit(indicatorleds, 13);
 		mux3[2] = false;
 		break;
 	case 3:
-		mux1[3] = get_bit(functionlamps, 4);
-		mux2[3] = get_bit(indicatorlamps, 14);
+		mux1[3] = get_bit(functionleds, 4);
+		mux2[3] = get_bit(indicatorleds, 14);
 		mux3[3] = false;
 		break;
 	case 4:
-		mux1[4] = get_bit(functionlamps, 3);
-		mux2[4] = get_bit(steplamps, 14);
+		mux1[4] = get_bit(functionleds, 3);
+		mux2[4] = get_bit(stepleds, 14);
 		mux3[4] = false;
 		break;
 	case 5:
-		mux1[5] = get_bit(functionlamps, 2);
-		mux2[5] = get_bit(indicatorlamps, 15);
+		mux1[5] = get_bit(functionleds, 2);
+		mux2[5] = get_bit(indicatorleds, 15);
 		mux3[5] = false;
 		break;
 	case 6:
-		mux1[6] = get_bit(functionlamps, 1);
-		mux2[6] = get_bit(steplamps, 15);
-		mux3[6] = get_bit(indicatorlamps, 12);
+		mux1[6] = get_bit(functionleds, 1);
+		mux2[6] = get_bit(stepleds, 15);
+		mux3[6] = get_bit(indicatorleds, 12);
 		break;
 	case 7:
-		mux1[7] = get_bit(functionlamps, 0);
-		mux2[7] = get_bit(functionlamps, 7);
-		mux3[7] = get_bit(steplamps, 12);
+		mux1[7] = get_bit(functionleds, 0);
+		mux2[7] = get_bit(functionleds, 7);
+		mux3[7] = get_bit(stepleds, 12);
 		break;
 	case 8:
-		mux1[8] = get_bit(indicatorlamps, 1);
-		mux2[8] = get_bit(indicatorlamps, 5);
-		mux3[8] = get_bit(indicatorlamps, 9);
+		mux1[8] = get_bit(indicatorleds, 1);
+		mux2[8] = get_bit(indicatorleds, 5);
+		mux3[8] = get_bit(indicatorleds, 9);
 		break;
 	case 9:
-		mux1[9] = get_bit(steplamps, 1);
-		mux2[9] = get_bit(steplamps, 5);
-		mux3[9] = get_bit(steplamps, 9);
+		mux1[9] = get_bit(stepleds, 1);
+		mux2[9] = get_bit(stepleds, 5);
+		mux3[9] = get_bit(stepleds, 9);
 		break;
 	case 10:
-		mux1[10] = get_bit(indicatorlamps, 0);
-		mux2[10] = get_bit(indicatorlamps, 4);
-		mux3[10] = get_bit(indicatorlamps, 8);
+		mux1[10] = get_bit(indicatorleds, 0);
+		mux2[10] = get_bit(indicatorleds, 4);
+		mux3[10] = get_bit(indicatorleds, 8);
 		break;
 	case 11:
-		mux1[11] = get_bit(steplamps, 0);
-		mux2[11] = get_bit(steplamps, 4);
-		mux3[11] = get_bit(steplamps, 8);
+		mux1[11] = get_bit(stepleds, 0);
+		mux2[11] = get_bit(stepleds, 4);
+		mux3[11] = get_bit(stepleds, 8);
 		break;
 	case 12:
-		mux1[12] = get_bit(indicatorlamps, 3);
-		mux2[12] = get_bit(indicatorlamps, 7);
-		mux3[12] = get_bit(indicatorlamps, 11);
+		mux1[12] = get_bit(indicatorleds, 3);
+		mux2[12] = get_bit(indicatorleds, 7);
+		mux3[12] = get_bit(indicatorleds, 11);
 		break;
 	case 13:
-		mux1[13] = get_bit(steplamps, 3);
-		mux2[13] = get_bit(steplamps, 7);
-		mux3[13] = get_bit(steplamps, 11);
+		mux1[13] = get_bit(stepleds, 3);
+		mux2[13] = get_bit(stepleds, 7);
+		mux3[13] = get_bit(stepleds, 11);
 		break;
 	case 14:
-		mux1[14] = get_bit(indicatorlamps, 2);
-		mux2[14] = get_bit(indicatorlamps, 6);
-		mux3[14] = get_bit(indicatorlamps, 10);
+		mux1[14] = get_bit(indicatorleds, 2);
+		mux2[14] = get_bit(indicatorleds, 6);
+		mux3[14] = get_bit(indicatorleds, 10);
 		break;
 	case 15:
-		mux1[15] = get_bit(steplamps, 2);
-		mux2[15] = get_bit(steplamps, 6);
-		mux3[15] = get_bit(steplamps, 10);
+		mux1[15] = get_bit(stepleds, 2);
+		mux2[15] = get_bit(stepleds, 6);
+		mux3[15] = get_bit(stepleds, 10);
 
 	}
 }
@@ -160,22 +160,22 @@ void muxoutirq(int i) {
 }
 
 void update_trg() {
-	digitalWrite(Tout01, get_bit(trigout, 0));
-	digitalWrite(Tout02, get_bit(trigout, 1));
-	digitalWrite(Tout03, get_bit(trigout, 2));
-	digitalWrite(Tout04, get_bit(trigout, 3));
-	digitalWrite(Tout05, get_bit(trigout, 4));
-	digitalWrite(Tout06, get_bit(trigout, 5));
-	digitalWrite(Tout07, get_bit(trigout, 6));
-	digitalWrite(Tout08, get_bit(trigout, 7));
-	digitalWrite(Tout09, get_bit(trigout, 8));
-	digitalWrite(Tout10, get_bit(trigout, 9));
-	digitalWrite(Tout11, get_bit(trigout, 10));
-	digitalWrite(Tout12, get_bit(trigout, 11));
-	digitalWrite(Tout13, get_bit(trigout, 12));
-	digitalWrite(Tout14, get_bit(trigout, 13));
-	digitalWrite(Tout15, get_bit(trigout, 14));
-	digitalWrite(Tout16, get_bit(trigout, 15));
+	digitalWrite(Tout01, get_bit(gateout, 0));
+	digitalWrite(Tout02, get_bit(gateout, 1));
+	digitalWrite(Tout03, get_bit(gateout, 2));
+	digitalWrite(Tout04, get_bit(gateout, 3));
+	digitalWrite(Tout05, get_bit(gateout, 4));
+	digitalWrite(Tout06, get_bit(gateout, 5));
+	digitalWrite(Tout07, get_bit(gateout, 6));
+	digitalWrite(Tout08, get_bit(gateout, 7));
+	digitalWrite(Tout09, get_bit(gateout, 8));
+	digitalWrite(Tout10, get_bit(gateout, 9));
+	digitalWrite(Tout11, get_bit(gateout, 10));
+	digitalWrite(Tout12, get_bit(gateout, 11));
+	digitalWrite(Tout13, get_bit(gateout, 12));
+	digitalWrite(Tout14, get_bit(gateout, 13));
+	digitalWrite(Tout15, get_bit(gateout, 14));
+	digitalWrite(Tout16, get_bit(gateout, 15));
 }
 
 //set Hardware debouncing!

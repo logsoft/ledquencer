@@ -4,13 +4,14 @@
 #define globals_h
 
 #define PATLEN 16
+#define TRACKS 16
 
-volatile static int indicatorlamps;
-volatile static int steplamps;
-volatile static int functionlamps;
+volatile static int indicatorleds;
+volatile static int stepleds;
+volatile static int functionleds;
 volatile static int stepbuttons;
 volatile static int funcbuttons;
-volatile static int trigout;
+volatile static int gateout;
 
 volatile static int debug_int;
 static volatile bool last_state[255];
