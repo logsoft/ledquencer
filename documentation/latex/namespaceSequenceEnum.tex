@@ -1,0 +1,83 @@
+\hypertarget{namespaceSequenceEnum}{\section{Sequence\-Enum Namespace Reference}
+\label{namespaceSequenceEnum}\index{Sequence\-Enum@{Sequence\-Enum}}
+}
+
+
+This is the sequence data namespace.\par
+ it defines sequence related enumerations used across the programm.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSequenceEnum_1_1StepData}{Step\-Data}
+\begin{DoxyCompactList}\small\item\em Basic struct of one step -\/ data. used on all step data operations. \end{DoxyCompactList}\item 
+struct \hyperlink{structSequenceEnum_1_1SequenceMeta}{Sequence\-Meta}
+\begin{DoxyCompactList}\small\item\em some ssquence metadata for internal handling \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3}{e\-\_\-run\-States} \{ \\*
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aba765510708832ec607eb5916f07fd35}{Run}, 
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa9ca5b61780cadeed0d5963095fe5db5}{Start}, 
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa277d3642c16a5f3597cf49ff021abff}{Restart}, 
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3a9a4e6acbff3104211a16c87ebe5b7a58}{Stop}, 
+\\*
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3ac384cac9192fd9e1def2767b7e7620d4}{Pause}, 
+\hyperlink{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aac7d742b92696400bf6ebb628a934bf4}{Reset}
+ \}
+\item 
+enum \hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857}{e\-\_\-run\-Mode} \{ \\*
+\hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a680c3bf17dd73fb62741d87a04f98003}{Forward}, 
+\hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857af792bbd5445c7cae1c3132f15be51bb3}{Backward}, 
+\hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a6e24874edb554db76221d23abba33793}{Pendulum}, 
+\hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857aa496073028085d359012beb35fbfbd5a}{Random}, 
+\\*
+\hyperlink{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a0d9f27ad3750aba023a973ead8dbecb8}{Brownian}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the sequence data namespace.\par
+ it defines sequence related enumerations used across the programm. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857}{\index{Sequence\-Enum@{Sequence\-Enum}!e\-\_\-run\-Mode@{e\-\_\-run\-Mode}}
+\index{e\-\_\-run\-Mode@{e\-\_\-run\-Mode}!SequenceEnum@{Sequence\-Enum}}
+\subsubsection[{e\-\_\-run\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sequence\-Enum\-::e\-\_\-run\-Mode}}}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857}
+playing mode track can has \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Forward@{Forward}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Forward@{Forward}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a680c3bf17dd73fb62741d87a04f98003}{Forward}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a680c3bf17dd73fb62741d87a04f98003}
+}]Play sequence forward \index{Backward@{Backward}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Backward@{Backward}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857af792bbd5445c7cae1c3132f15be51bb3}{Backward}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857af792bbd5445c7cae1c3132f15be51bb3}
+}]Play sequence reverse \index{Pendulum@{Pendulum}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Pendulum@{Pendulum}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a6e24874edb554db76221d23abba33793}{Pendulum}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a6e24874edb554db76221d23abba33793}
+}]Play sequence pendular \index{Random@{Random}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Random@{Random}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857aa496073028085d359012beb35fbfbd5a}{Random}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857aa496073028085d359012beb35fbfbd5a}
+}]Play sequence random \index{Brownian@{Brownian}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Brownian@{Brownian}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a0d9f27ad3750aba023a973ead8dbecb8}{Brownian}\label{namespaceSequenceEnum_a2241436a1b94492d5f8df2f01a858857a0d9f27ad3750aba023a973ead8dbecb8}
+}]Play sequence in brownian pattern \end{description}
+\end{Desc}
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3}{\index{Sequence\-Enum@{Sequence\-Enum}!e\-\_\-run\-States@{e\-\_\-run\-States}}
+\index{e\-\_\-run\-States@{e\-\_\-run\-States}!SequenceEnum@{Sequence\-Enum}}
+\subsubsection[{e\-\_\-run\-States}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sequence\-Enum\-::e\-\_\-run\-States}}}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3}
+States the sequence can be in \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Run@{Run}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Run@{Run}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aba765510708832ec607eb5916f07fd35}{Run}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aba765510708832ec607eb5916f07fd35}
+}]\index{Start@{Start}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Start@{Start}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa9ca5b61780cadeed0d5963095fe5db5}{Start}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa9ca5b61780cadeed0d5963095fe5db5}
+}]\index{Restart@{Restart}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Restart@{Restart}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa277d3642c16a5f3597cf49ff021abff}{Restart}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aa277d3642c16a5f3597cf49ff021abff}
+}]\index{Stop@{Stop}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Stop@{Stop}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3a9a4e6acbff3104211a16c87ebe5b7a58}{Stop}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3a9a4e6acbff3104211a16c87ebe5b7a58}
+}]\index{Pause@{Pause}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Pause@{Pause}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3ac384cac9192fd9e1def2767b7e7620d4}{Pause}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3ac384cac9192fd9e1def2767b7e7620d4}
+}]\index{Reset@{Reset}!Sequence\-Enum@{Sequence\-Enum}}\index{Sequence\-Enum@{Sequence\-Enum}!Reset@{Reset}}\item[{\em 
+\hypertarget{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aac7d742b92696400bf6ebb628a934bf4}{Reset}\label{namespaceSequenceEnum_ac7ea8369c971b81acfe5a1d63a10ebe3aac7d742b92696400bf6ebb628a934bf4}
+}]\end{description}
+\end{Desc}

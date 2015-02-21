@@ -1,0 +1,97 @@
+\hypertarget{bushardware_8h}{\section{bushardware.\-h File Reference}
+\label{bushardware_8h}\index{bushardware.\-h@{bushardware.\-h}}
+}
+{\ttfamily \#include $<$Fast\-L\-E\-D.\-h$>$}\\*
+{\ttfamily \#include $<$pixeltypes.\-h$>$}\\*
+{\ttfamily \#include $<$sam3xa/include/instance/instance\-\_\-pioa.\-h$>$}\\*
+{\ttfamily \#include $<$U\-A\-R\-T\-Class.\-h$>$}\\*
+{\ttfamily \#include $<$variant.\-h$>$}\\*
+{\ttfamily \#include $<$Wire.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Adafruit\-\_\-\-M\-P\-R121.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$Adafruit\-\_\-\-Neo\-Pixel.\-h$>$}\\*
+Include dependency graph for bushardware.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bushardware_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bushardware_8h_adad67fe595ea440c8f8247ec2cddf070}{D\-A\-T\-A\-\_\-\-P\-I\-N}~6
+\item 
+\#define \hyperlink{bushardware_8h_a4c4ae9a4146ce8d6a5debc90300d9abd}{N\-U\-M\-\_\-\-L\-E\-D\-S}~40
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{bushardware_8h_a5fa2c6d71783408acbdfa7046ecc777f}{show\-Leds} ()
+\item 
+void \hyperlink{bushardware_8h_adf3d0f6e1a9dd64fb3ec03ec0e662bfe}{read\-Buttons} ()
+\item 
+void \hyperlink{bushardware_8h_a7b55b33f80d664f78718fdb04b0b9f7c}{set\-Debounce} ()
+\item 
+void \hyperlink{bushardware_8h_ad8d6aca3d85765fb35287d8f9bad21d1}{portsetup} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\-R\-G\-B \hyperlink{bushardware_8h_a1b4f26a01e11d7eb2848bc41b0f6dd9d}{leds} \mbox{[}\hyperlink{bushardware_8h_a4c4ae9a4146ce8d6a5debc90300d9abd}{N\-U\-M\-\_\-\-L\-E\-D\-S}\mbox{]}
+\item 
+Adafruit\-\_\-\-M\-P\-R121 \hyperlink{bushardware_8h_a5fde9cee1f1e57f9ee8d7203e9001669}{touchboard} \mbox{[}4\mbox{]} = \{ Adafruit\-\_\-\-M\-P\-R121() \}
+\item 
+Adafruit\-\_\-\-Neo\-Pixel \hyperlink{bushardware_8h_acf2771bd8bfaf855bbcc6c30301bf380}{strip} = Adafruit\-\_\-\-Neo\-Pixel(40, \hyperlink{bushardware_8h_adad67fe595ea440c8f8247ec2cddf070}{D\-A\-T\-A\-\_\-\-P\-I\-N}, N\-E\-O\-\_\-\-G\-R\-B + N\-E\-O\-\_\-\-K\-H\-Z800)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{bushardware_8h_adad67fe595ea440c8f8247ec2cddf070}{\index{bushardware.\-h@{bushardware.\-h}!D\-A\-T\-A\-\_\-\-P\-I\-N@{D\-A\-T\-A\-\_\-\-P\-I\-N}}
+\index{D\-A\-T\-A\-\_\-\-P\-I\-N@{D\-A\-T\-A\-\_\-\-P\-I\-N}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{D\-A\-T\-A\-\_\-\-P\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-A\-T\-A\-\_\-\-P\-I\-N~6}}\label{bushardware_8h_adad67fe595ea440c8f8247ec2cddf070}
+\hypertarget{bushardware_8h_a4c4ae9a4146ce8d6a5debc90300d9abd}{\index{bushardware.\-h@{bushardware.\-h}!N\-U\-M\-\_\-\-L\-E\-D\-S@{N\-U\-M\-\_\-\-L\-E\-D\-S}}
+\index{N\-U\-M\-\_\-\-L\-E\-D\-S@{N\-U\-M\-\_\-\-L\-E\-D\-S}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{N\-U\-M\-\_\-\-L\-E\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-M\-\_\-\-L\-E\-D\-S~40}}\label{bushardware_8h_a4c4ae9a4146ce8d6a5debc90300d9abd}
+
+
+\subsection{Function Documentation}
+\hypertarget{bushardware_8h_ad8d6aca3d85765fb35287d8f9bad21d1}{\index{bushardware.\-h@{bushardware.\-h}!portsetup@{portsetup}}
+\index{portsetup@{portsetup}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{portsetup}]{\setlength{\rightskip}{0pt plus 5cm}void portsetup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bushardware_8h_ad8d6aca3d85765fb35287d8f9bad21d1}
+\hypertarget{bushardware_8h_adf3d0f6e1a9dd64fb3ec03ec0e662bfe}{\index{bushardware.\-h@{bushardware.\-h}!read\-Buttons@{read\-Buttons}}
+\index{read\-Buttons@{read\-Buttons}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{read\-Buttons}]{\setlength{\rightskip}{0pt plus 5cm}void read\-Buttons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bushardware_8h_adf3d0f6e1a9dd64fb3ec03ec0e662bfe}
+\hypertarget{bushardware_8h_a7b55b33f80d664f78718fdb04b0b9f7c}{\index{bushardware.\-h@{bushardware.\-h}!set\-Debounce@{set\-Debounce}}
+\index{set\-Debounce@{set\-Debounce}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{set\-Debounce}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Debounce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bushardware_8h_a7b55b33f80d664f78718fdb04b0b9f7c}
+\hypertarget{bushardware_8h_a5fa2c6d71783408acbdfa7046ecc777f}{\index{bushardware.\-h@{bushardware.\-h}!show\-Leds@{show\-Leds}}
+\index{show\-Leds@{show\-Leds}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{show\-Leds}]{\setlength{\rightskip}{0pt plus 5cm}void show\-Leds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bushardware_8h_a5fa2c6d71783408acbdfa7046ecc777f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{bushardware_8h_a1b4f26a01e11d7eb2848bc41b0f6dd9d}{\index{bushardware.\-h@{bushardware.\-h}!leds@{leds}}
+\index{leds@{leds}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{leds}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-G\-B leds\mbox{[}{\bf N\-U\-M\-\_\-\-L\-E\-D\-S}\mbox{]}}}\label{bushardware_8h_a1b4f26a01e11d7eb2848bc41b0f6dd9d}
+\hypertarget{bushardware_8h_acf2771bd8bfaf855bbcc6c30301bf380}{\index{bushardware.\-h@{bushardware.\-h}!strip@{strip}}
+\index{strip@{strip}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{strip}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\-\_\-\-Neo\-Pixel strip = Adafruit\-\_\-\-Neo\-Pixel(40, {\bf D\-A\-T\-A\-\_\-\-P\-I\-N}, N\-E\-O\-\_\-\-G\-R\-B + N\-E\-O\-\_\-\-K\-H\-Z800)}}\label{bushardware_8h_acf2771bd8bfaf855bbcc6c30301bf380}
+\hypertarget{bushardware_8h_a5fde9cee1f1e57f9ee8d7203e9001669}{\index{bushardware.\-h@{bushardware.\-h}!touchboard@{touchboard}}
+\index{touchboard@{touchboard}!bushardware.h@{bushardware.\-h}}
+\subsubsection[{touchboard}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\-\_\-\-M\-P\-R121 touchboard\mbox{[}4\mbox{]} = \{ Adafruit\-\_\-\-M\-P\-R121() \}}}\label{bushardware_8h_a5fde9cee1f1e57f9ee8d7203e9001669}
