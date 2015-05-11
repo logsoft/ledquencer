@@ -11,6 +11,7 @@
 #include "globals.h"
 #include "debug.h"
 #include <vector>
+
 //! menu enumerations.
 /*! This is the Menu namespace.\n it defines menue related enumerations used across the programm! */
 namespace MenuEnums{
@@ -30,7 +31,7 @@ enum e_menu_buttons {
 }
 
 //! \brief menu class for menu handling.
-/*! \detail It defines menu related functions and callbacks! */
+/*! \detail Menu It defines menu related functions and callbacks! */
 class Menu {
 public:
 	Menu(); //instance declaration

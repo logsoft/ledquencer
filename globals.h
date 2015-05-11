@@ -5,7 +5,7 @@
 
 #define PATLEN 16
 #define TRACKS 16
-
+volatile static int pattern;
 volatile static int indicatorleds;
 volatile static int stepleds;
 volatile static int functionleds;

@@ -95,9 +95,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classMenu.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="menu_8h_source.html">menu.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Menu:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Menu:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenu__coll__graph.png" border="0" usemap="#Menu_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
@@ -126,7 +128,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>menu class for menu handling. </p>
-<p>It defines menu related functions and callbacks! </p>
+<p><a class="el" href="classMenu.html" title="menu class for menu handling. ">Menu</a> It defines menu related functions and callbacks! </p>
+
+<p>Definition at line <a class="el" href="menu_8h_source.html#l00034">34</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad466dd83355124a6ed958430450bfe94"></a>
 <div class="memitem">
@@ -140,6 +144,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00010">10</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>References <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dba35174bcb834b5288e617b5e403916282">MenuEnums::Main</a>.</p>
 
 </div>
 </div>
@@ -172,11 +180,17 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="classMenu.html" title="menu class for menu handling. ">Menu</a> Mainloop processes all the button and led data according to selected page needs to get updated regularly in mainloop </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">functionbuttons</td><td></td></tr>
-    <tr><td class="paramname">stepbuttons</td><td></td></tr>
+    <tr><td class="paramname">fb</td><td>functionbuttons </td></tr>
+    <tr><td class="paramname">sb</td><td>stepbuttons </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00120">120</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>References <a class="el" href="debug_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>, and <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dba35174bcb834b5288e617b5e403916282">MenuEnums::Main</a>.</p>
+
+<p>Referenced by <a class="el" href="ledquencer_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop()</a>.</p>
 
 </div>
 </div>
@@ -213,6 +227,12 @@ Public Member Functions</h2></td></tr>
 <p>get indicatorleds </p>
 <p>get the data for the indicator leds . process the datahandling to update the stepleds. get the according data for page. returns an int 16 states. todo: return 16 colors!. </p>
 
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00051">51</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>References <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dba35174bcb834b5288e617b5e403916282">MenuEnums::Main</a>, <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dba3775e44f7da30c57fe300475a573e024">MenuEnums::Pattern</a>, and <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dbac342bed09bcc9a5d2e4c80c6cbac4e42">MenuEnums::Sequence</a>.</p>
+
+<p>Referenced by <a class="el" href="ledquencer_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4a6d32b0f1500846c567097408b7483b"></a>
@@ -229,6 +249,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns actual page as int </p>
+
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00041">41</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="ledquencer_8ino.html#a92c00e5adb1836741614c6492982e306">alive1()</a>, and <a class="el" href="ledquencer_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop()</a>.</p>
 
 </div>
 </div>
@@ -247,6 +271,12 @@ Public Member Functions</h2></td></tr>
 
 <p>get stepleds </p>
 <p>process the datahandling to update the stepleds. get the according data for page. returns an int 16 states. todo: return 16 colors!. </p>
+
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00071">71</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>References <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dba35174bcb834b5288e617b5e403916282">MenuEnums::Main</a>, and <a class="el" href="namespaceMenuEnums.html#a8a0112033fd82b21fb91024f2da815dbac342bed09bcc9a5d2e4c80c6cbac4e42">MenuEnums::Sequence</a>.</p>
+
+<p>Referenced by <a class="el" href="ledquencer_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop()</a>.</p>
 
 </div>
 </div>
@@ -268,21 +298,25 @@ Public Member Functions</h2></td></tr>
 <p>onUpdate callback detail </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">function</td><td>to call. gets called by ??. and processes the events </td></tr>
+    <tr><td class="paramname">function</td><td>callback function pointer. gets called by ??. and processes the events </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="menu_8cpp_source.html#l00022">22</a> of file <a class="el" href="menu_8cpp_source.html">menu.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="ledquencer_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="menu_8h_source.html">menu.h</a></li>
-<li><a class="el" href="menu_8cpp.html">menu.cpp</a></li>
+<li><a class="el" href="menu_8cpp_source.html">menu.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 21 2015 05:37:43 for ledquence Alpha by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 22 2015 17:50:31 for ledquence Alpha by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

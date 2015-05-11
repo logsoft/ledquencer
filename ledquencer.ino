@@ -39,13 +39,32 @@ void alive1();
 //Menu menu = Menu(tracksvec);
 
 Menu menu = Menu();
+int pattern2;
+int pattern3;
 
 void test(int page, int buttons){
 
-	Serial.print("callback hey!! ");
-	Serial.print(page);
+	Serial.print("callback hey oida!!: ");
+	Serial.println(page);
 	Serial.print(" - ");
-	Serial.println(buttons);
+	Serial.println(buttons,BIN);
+	Serial.print(" - ");
+	Serial.println(pattern,BIN);
+
+	switch (page) {
+	case MenuEnums::Main:
+		//pattern = buttons;
+		break;
+	case MenuEnums::Pattern:
+		pattern2 = (pattern2 ^ buttons);
+		break;
+	case MenuEnums::Sequence:
+		pattern = (pattern ^ buttons);
+		break;
+	default:
+		break;
+
+	}
 
 }
 
@@ -90,8 +109,8 @@ void loop() {
 	menu.do_your_things(funcbuttons, stepbuttons);
 //	steplamps = stepbuttons;
 //	indicatorlamps = stepbuttons;
-	stepleds = menu.get_indicatorleds();
-	indicatorleds = menu.get_stepleds();
+	stepleds = pattern; //menu.get_indicatorleds();
+	indicatorleds = pattern2 ;//menu.get_stepleds();
 	functionleds = menu.get_page();
 
 //send debug messages

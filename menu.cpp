@@ -16,20 +16,18 @@ Menu::Menu() {
 }
 
 /*! \detail onUpdate callback detail
- \param function to call.
+ \param function callback function pointer.
  gets called by ??. and processes the events
  */
 void Menu::onUpdate(void (*function)(int, int)) {
 	onUpdateCallback = function;
 }
 
-//Menu::Menu(std::vector<Track> tracks) {
-//	_page = MenueState::Main;
-//	//_tracks = &tracks;
-//	_old_stepb = 0;
-//	_old_funcb = 0;
-//}
 
+/*! gets the desired bit from mask.
+ * returns true/false
+ * todo: makro/inline?
+ */
 bool Menu::get_bit(int val, int pos) {
 	return 0x01 & (val >> pos);
 }
@@ -50,18 +48,22 @@ int Menu::get_page() {
  returns an int 16 states.
  todo: return 16 colors!.
  */
+
+
 int Menu::get_indicatorleds() {
 	switch (_page) {
 	case MenuEnums::Main:
 		return _stepb;
 		break;
 	case MenuEnums::Sequence:
-		return MenuEnums::Sequence;
+		return pattern;
+		break;
 	case MenuEnums::Pattern:
-		return MenuEnums::Pattern;
-
+		return pattern;
+		break;
 	default:
 		return _stepb;
+		break;
 	}
 }
 /*! \detail
@@ -75,10 +77,9 @@ int Menu::get_stepleds() {
 	case MenuEnums::Main:
 		return _stepb;
 		break;
-	case MenuEnums::Sequence:
-		return 32;
 	default:
 		return _stepb;
+		break;
 	}
 }
 
@@ -86,7 +87,7 @@ void Menu::set_newpage(int funcb) {
 	///checks the Functionbutton state and switrches to according _menue page
 	//no reset, new selection
 	if (check_mask_equal(funcb, MenuEnums::Sequence)) {
-		DEBUG("channel selected");
+		DEBUG("Sequence selected");
 		_page = MenuEnums::Sequence;
 	}
 	if (check_mask_equal(funcb, MenuEnums::Pattern)) {
@@ -116,8 +117,8 @@ void Menu::set_newpage(int funcb) {
 /*! \detail Menu Mainloop
  * processes all the button and led data according to selected page
  * needs to get updated regularly in mainloop
- \param functionbuttons
- \param stepbuttons
+ \param fb functionbuttons
+ \param sb stepbuttons
 */
 void Menu::do_your_things(int fb, int sb) {
 	_funcb = fb;
